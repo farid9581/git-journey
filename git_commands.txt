@@ -1,0 +1,62 @@
+1.git --version
+->checks out your git version
+2.cd
+->allows me to move from one folder to another
+3.pwd
+->check my current directory
+4.ls
+->list files and folders
+5.mkdir
+->used to create new folders(directory) nested ie subfolders use projects/python /ml
+6.git init
+->converts ordinary files into a git repository,allowing git to track changes to your file(hidden file created)
+7.git status
+->check the current state of our git repository
+8.cd ..
+->go back one step back in the file path
+9.start .
+->this opens our current folder in windows file explorer
+10.ls -la
+->lists all files and directories in our current location,icluding hidden files and also files infos
+11.cd~
+->moves working directory to my home page
+12.git clone url
+->this copies an existing git repository from a remote location e.g GitHub onto my pc
+->u can download a project file from GitHub to ur computer
+13,git add --all  & git add -A
+->stages changes across the entire repository
+14.WORKING DIRECTORY
+->where we create,modify and delete files
+15.STAGING AREA
+->where we prepare changes for our next COMMIT
+16.LOCAL REPOSITORY
+->where GIT stores commited snapshots of our project
+17.git add .
+->stages changes under the current directory
+18.git add {filename}
+->stages a specific file
+19.git reset
+->used to undo changes in git staging area or move our current branch to an earlier commit
+20.git commit -m "{your message}"
+->permanently records our staged changes in our local GIT repository
+21.git add *
+->stages matching files and directories in the current directory
+22.git config --[global/local/system][user.email/user.name,e.tc] "whatever is it u want to configure"
+->configures git setting ie sets ur email once and for all so that when u commit it knows u automatically
+23.git reset HEAD~
+->used to undo your most recent commit and move your current branch back by one commit
+24.git reset --soft HEAD~
+->undoes last commit; changes remain staged
+25.git reset --mixed HEAD~
+->undoes last commit;changes become unstaged same as 23
+26.git reset --hard HEAD~
+->undoes last commit and discards its associated tracked-file changes*
+27.git rm
+->remove files from our git repository and stage their deletion
+28.git rm --cached
+->remove file from GIT but keep it in ur computer
+29.git rm -f
+->forcefully remove a file from ur working directory and GITs tracking,even when cannot be normally removed
+30.git log (git log --oneline ;is a shorter version)
+->used to view the commit history of your GIT repository also used in accessing versions of ur project
+31.git branch
