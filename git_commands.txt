@@ -60,3 +60,33 @@
 30.git log (git log --oneline ;is a shorter version)
 ->used to view the commit history of your GIT repository also used in accessing versions of ur project
 31.git branch
+->creates, views and manages branch in GIT.Also lists all ur branches in the local repository
+32.git branch -d {name of the branch}
+->deletes a branch
+33.git branch -m {oldname} {newname}
+->renames a branch
+34.git checkout {name of branch}
+->this allows switching btwn different branches
+35.git switch -c {name of branch}
+->git creates a new branch and automatically switches to it
+36.git merge
+->used to combine changes from one branch into another branch
+->if you are in main branch and u run code git merge development
+[this means add changes from development INTO main branch]
+37.git merge --abort
+->cancels an ongoing merge
+->useful during conflicts
+38.FAST FORWARD MERGE
+->suppose main has not committed any changes since creating the development branch while the development branch has committed some changes then the merge used is fast forward merge where git moves the main (branch)pointer to the latest commit in the development branch
+39.THREE-WAY MERGE
+->happens when both of the branches to be merged have added new commits independently
+->prone to conflict
+->git checks the common ancestor(when the new branch was formed), latest main commit, latest development commit
+->allows git to combine the changes and create a merge commit
+->if there emerges a conflict, u will have to MANUALLY resolve the conflict, stage the file changed and commit it
+40.git push
+->sends ur local commits to a remote repository e.g. github
+41.git push origin main
+->git push=upload local commits
+->origin=default name given to the remote repository
+->main=the destination branch on github
